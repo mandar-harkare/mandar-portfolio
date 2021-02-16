@@ -1,5 +1,4 @@
-ul.container-fluid.text-center.social-icons-container#links
+.container-fluid.text-center.social-icons-container#links
     each icon in helpers.socialIcons
-        li
-            a(href=`${icon.href}` target="_blank" rel="noopener" aria-hidden="true")
-                i(class=`fa ${icon.faIcon}`)
+        a(href=`${icon.href}` target="_blank" rel="noopener")
+            i(class=`fa ${icon.faIcon}` aria-hidden="true")

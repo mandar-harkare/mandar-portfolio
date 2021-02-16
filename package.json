@@ -8,7 +8,7 @@
     "watch": "nodemon ./app.js --ignore public/",
     "assets": "webpack -w --display-max-modules 0",
     "scss": "node-sass --watch public/sass -o public/dist",
-    "webpack": "npmx webpack",
+    "webpack": "npx webpack",
     "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name"
   },
   "dependencies": {

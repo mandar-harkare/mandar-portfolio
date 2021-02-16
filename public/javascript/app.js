@@ -111,3 +111,30 @@ if (scrollspy) {
     $("nav-link").addClass("active");
   });
 }
+
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+  // $('.myImage').css({'transform' : 'rotate(360deg)'});
+  // $('.myImage').animate(
+  //   { deg: 0 }
+  // );
+}, false);
+$('body.*').on('click', function(){
+  $('.myImage').animate(
+    { deg: 360 },
+    {
+      duration: 1200,
+      step: function(now) {
+        $(this).css({ transform: 'rotate(' + now + 'deg)' });
+      }
+    }
+  );
+});
+// $('.myImage').animate({
+//   transform: 'rotate(360deg)',
+//   left: '+=200px'
+// })
+// $('.myImage').animate({
+//   transform: 'rotate(0deg)',
+//   left: '-=200px'
+// })

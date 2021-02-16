@@ -454,32 +454,32 @@ button:focus {
   }
 }
 
+.myImage:hover, .fa:hover {
+  animation: spin 3s infinite;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* 9. Footer
 -------------------------------------------*/
 
 .social-icons-container {
   background-color: #000;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   margin-top: 4rem;
-  padding: 4rem;
+  padding-bottom: 5rem;
 
   .fa {
     color: #fff;
+    margin-right: 1rem;
   }
-}
-
-.social-icons-container li {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0 20px;
-}
-
-.social-icons-container li a {
-  position: relative;
-  border-radius: 50%;
-  font-family: Verdana;
-  font-weight: bold;
-  font-size: 50px;
-  cursor: pointer;
-  padding: 2rem;
-  background: #999;
 }
