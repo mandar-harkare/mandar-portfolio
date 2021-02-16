@@ -1,0 +1,67 @@
+.container.contact-container#contact
+    .row
+        .col-12
+            h3.title.text-left.section-title.text-center Contact
+            
+        .contact-background.mx-auto
+            .col-xs-12.col-md-12.col-lg-12
+
+                #contact-success.alert.alert-success.hidden
+                    | Your message was send. I'll get back to you as soon as possible.
+                    br
+                
+                #contact-error.alert.alert-danger.hidden
+
+                form#contact-form.form(method='POST')
+                    .form-group
+                        label(
+                            for='name'
+                            ) Name 
+                        input.border-top-0.border-left-0.border-right-0(
+                            type='text',
+                            name='name',
+                            class='form-control',
+                            id='name'
+                            ) 
+                    
+                    .form-group
+                        label(
+                            for='email'
+                            ) Email 
+                        input.border-top-0.border-left-0.border-right-0(
+                            type='email',
+                            name='email',
+                            class='form-control',
+                            id='email'
+                            ) 
+                    
+                    .form-group
+                        label(
+                            for='message'
+                            ) Message 
+                        textarea.border-top-0.border-left-0.border-right-0(
+                            name='message',
+                            class='form-control',
+                            rows='5',
+                            id='message'
+                            )
+
+                    .form-group
+                        img(src=`${captchaImg}`)
+                        label(
+                            for='captcha'
+                            ) Captcha 
+                        input.border-top-0.border-left-0.border-right-0(
+                            type='text',
+                            name='captcha',
+                            class='form-control',
+                            id='captcha'
+                            ) 
+
+                    .form-group.text-center
+                        button.btn.btn-outline-light(
+                            type='submit'
+                        )
+                            i.fa.fa-paper-plane-o
+                            |  Send
+

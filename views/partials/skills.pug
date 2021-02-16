@@ -1,0 +1,10 @@
+.container.skills-container#skills
+    .row
+        .col-12.col-md-12
+            h3.title.section-title.text-center Skills
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="eb9f211d-1b8e-4646-9499-21699c568150" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+
+            each skill in helpers.skills
+                p.technology-title= `${skill.technology}`
+                .progress
+                    .progress-bar(role='progressbar' style='width: 0%;' aria-valuenow=`${skill.percent}` aria-valuemin='0' aria-valuemax='100')
