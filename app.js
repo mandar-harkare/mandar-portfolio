@@ -92,7 +92,7 @@ if (app.get("env") === "development") {
 app.use(errorHandlers.productionErrors);
 
 // start the app
-app.set("port", process.env.PORT || 8080);
+app.set("port", process.env.PORT || 80);
 
 if (tlsEnabled === true) {
   const server = https

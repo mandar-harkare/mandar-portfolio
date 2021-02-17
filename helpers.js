@@ -59,52 +59,60 @@ exports.skills = [
 
 exports.projectThumbnails = [
   {
-    title: "Marvel Heroes Search",
-    href: "https://d3ga.github.io/marvel-api/",
-    src: "/images/thumbnail_marvel_compressed.jpg",
-    alt: "Thumbnail of project Marvel Heroes Search",
+    title: "Maternal Health Task Force",
+    href: "http://www.mhtf.org/",
+    src: "/images/mhtf.png",
+    alt: "Thumbnail of project Maternal Health Task Force",
     description:
-      "A minimal design search engine for Marvel superheroes. You can see a picture of every character a small description and the comics that they have appeared using data provided by the Marvel API."
+      "Website was related to Conferences, News and managing videos & photos of those conferences."
   },
   {
-    title: "IP Geolocation",
-    href: "https://d3ga.github.io/user-geolocation-info/",
-    src: "/images/thumbnail_google_maps_compressed.png",
-    alt: "Thumbnail of project User Geolocation",
+    title: "Poggio Allegro",
+    href: "http://www.vinipoggioallegro.it/",
+    src: "/images/vini.png",
+    alt: "Thumbnail of project Poggio Allegro",
     description:
-      "Estimates the user's IP geolocation. Displays the country, city, region, provider, and postal code using data from the ipinfo.io API and displays a marker on the map using the Google Maps API"
+      "An Italian winery site."
   },
   {
-    title: "Beers Search",
-    href: "https://d3ga.github.io/beer-search/",
-    src: "/images/thumbnail_punkapi_compressed.jpg",
-    alt: "Thumbnail of project Beers Search",
+    title: "Continental Oils",
+    href: "http://continentaloils.com/",
+    src: "/images/continentaloils.png",
+    alt: "Thumbnail of project Continental Oils",
     description:
-      "You can search for a large variety of beers and read a small description about their characteristics and their origin. Data provided by the Punk API"
+      "A website for Oil Company, giving out the brochure of the range of products company has."
   },
   {
-    title: "GitHub User Search",
-    href: "https://github-api.netlify.com/",
-    src: "/images/github_compressed.jpg",
-    alt: "Thumbnail of project GitHub User Search",
+    title: "MyPepr",
+    href: "#",
+    src: "/images/mypepr.png",
+    alt: "Thumbnail of project MyPepr",
     description:
-      "Using GitHub's API to access user data, like their location, followers, repositories and their website if exists"
+      "A Social Networking site, where people can invite their friends to meet in restaurants, gardens or movie theaters."
   },
   {
-    title: "XKCD Comics",
-    href: "https://codepen.io/dega_k/pen/XzGNPX",
-    src: "/images/thumbnail_comics_compressed.jpg",
-    alt: "Thumbnail of project XKCD Comics",
+    title: "Work on Tap",
+    href: "#",
+    src: "/images/workontap.png",
+    alt: "Thumbnail of project Work on Tap",
     description:
-      "Need a small break with some developer comics? Then have a go! Browse a random comic or get a comic by their ID. Using data provided by the XKCD Comics API"
+      "A job hunting website."
   },
   {
-    title: "React ToDo",
-    href: "https://react-todo-app.kostasdegaitas.de/",
-    src: "/images/thumbnail_react_todo_compressed.jpg",
-    alt: "Thumbnail of project React ToDo",
+    title: "Razuna Module",
+    href: "https://www.drupal.org/project/razuna",
+    src: "/images/razuna.png",
+    alt: "Thumbnail of project Razuna Module",
     description:
-      "This is a todo list build with React.js. User can add, edit & delete todo items. The app uses the browser's local storage to save the current items"
+      "Created a Razuna module for Drupal 7. Razuna is an basic image/file uploader and browser using Razuna cloud server."
+  },
+  {
+    title: "Drupal Profile",
+    href: "https://www.drupal.org/u/mandarharkare",
+    src: "/images/drupal 8 logo Stacked CMYK 300.png",
+    alt: "Thumbnail of project Drupal Profile",
+    description:
+      "With over 200 new features and improvements, now is the time to start building with Drupal 8."
   }
 ];
 

@@ -351,11 +351,21 @@ button:focus {
     transition: all 0.3s ease-in-out;
     margin: 0 5px 30px 5px;
     box-shadow: 2rem 2rem 4rem #d8d8d8;
+    text-align: center;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
 
     &:hover {
       transition: transform 0.2s ease-in-out;
       transform: scale(1.05);
       opacity: 1;
+    }
+
+    .img-thumbnail {
+      max-height: 500px;
     }
   }
   .project-thumbnail-mask {
@@ -389,6 +399,7 @@ button:focus {
       font-weight: 600;
       margin-bottom: 0;
       font-size: 1.1rem;
+      width: 100%;
 
       @include media-breakpoint-down(md) {
         font-size: 1rem;
