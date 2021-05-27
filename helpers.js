@@ -34,23 +34,23 @@ exports.navigation = [
 
 exports.skills = [
   {
-    technology: "HTML | SCSS | Bootstrap",
-    percent: "93"
+    technology: "AWS Cloud Solutions",
+    percent: "75"
   },
   {
-    technology: "JavaScript (ES6)",
+    technology: "Terraform | Serverless | Cloud Formation | Infra as a Code",
     percent: "70"
   },
   {
-    technology: "React.js | Redux",
+    technology: "NodeJS | Javascript",
+    percent: "75"
+  },
+  {
+    technology: "Python",
     percent: "60"
   },
   {
-    technology: "Node.js | Express | MongoDB",
-    percent: "60"
-  },
-  {
-    technology: "Adobe Illustrator | Adobe Photoshop",
+    technology: "Jenkins Pipelines | CI/CD",
     percent: "96"
   }
 ];

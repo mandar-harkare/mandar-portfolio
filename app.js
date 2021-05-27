@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const https = require("https");
+const serverless = require('serverless-http');
 const express = require("express");
 const helmet = require("helmet");
 const bodyParser = require("body-parser");
@@ -91,17 +92,21 @@ if (app.get("env") === "development") {
 // production error handler
 app.use(errorHandlers.productionErrors);
 
-// start the app
-app.set("port", process.env.PORT || 80);
+// start the app locally
 
-if (tlsEnabled === true) {
-  const server = https
-    .createServer(tlsOptions, app)
-    .listen(app.get("port"), () => {
-      console.log(`Express running with TLS → PORT ${server.address().port}`);
-    });
-} else {
-  const server = app.listen(app.get("port"), () => {
-    console.log(`Express is running → PORT ${server.address().port}`);
-  });
-}
+// app.set("port", process.env.PORT || 80);
+
+// if (tlsEnabled === true) {
+//   const server = https
+//     .createServer(tlsOptions, app)
+//     .listen(app.get("port"), () => {
+//       console.log(`Express running with TLS → PORT ${server.address().port}`);
+//     });
+// } else {
+//   const server = app.listen(app.get("port"), () => {
+//     console.log(`Express is running → PORT ${server.address().port}`);
+//   });
+// }
+
+// start the app on lambda
+module.exports.handler = serverless(app);
